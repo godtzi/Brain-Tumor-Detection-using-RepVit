@@ -14,6 +14,7 @@ Data Source:
 2. Mendeley data by Hira et all : https://data.mendeley.com/datasets/zwr4ntf94j/1
 
 **MODEL**
+
 RepVit model are using the "repvit_m1_1" from timm library
 
 
