@@ -19,4 +19,4 @@ RepVit model are using the "repvit_m1_1" from timm library
 
 
 // will be updated
-*Written and made by Ghozi (GITHUB : gzzbottt)
+*Written and made by Ghozi (GITHUB : godtzi)
