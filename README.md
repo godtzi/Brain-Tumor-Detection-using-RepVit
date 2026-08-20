@@ -3,9 +3,9 @@
 - AI model to detect brain tumors from brain MRI images. 
 - It trained using RepVit that already pretrained.
 - The dataset used to make this model are 9069 brain MRI images.
-- It only to detect, not to identify the type of tumor.
-- It also didn't tell the place of the tumor, although we can use the Grad-CAM to identify the location of the tumor. 
-- It achieve 98.% of accuracy.
+- It is only to detect, not to identify the type of tumor.
+- It is also didn't tell the place of the tumor, although we can use the Grad-CAM to identify the location of the tumor. 
+- It is achieve 98.01% of accuracy.
 
 
 **DATASET** 
@@ -29,6 +29,12 @@ Recall    : 0.9876
 F1-Score  : 0.9876
 
 Confussion Matrix
+True Positive (TP) = 719
+True Negative (TN) = 169
+False Positive (FP) = 9
+False Negatif (FN) = 9
+
+*this metrics are test using testing data that didn't contained in training dataset, the number of images are 906.
 
 
 // will be updated
