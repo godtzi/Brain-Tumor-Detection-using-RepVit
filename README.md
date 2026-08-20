@@ -17,6 +17,19 @@ Data Source:
 
 RepVit model are using the "repvit_m1_1" from timm library
 
+the model is exported to some kind of format, like .pt (Pytorch), .onnx (ONNX) in 32 bit and 8 bit version.
+I highly recommend using the .pt and 32-bit .onnx version (the original), because the 8-bit onnx has a very low accuracy (around 19% of acurracy)
+
+
+**MODEL SPECS**
+The model achive (the .pt model):
+Accuracy  : 0.9801
+Precision : 0.9876
+Recall    : 0.9876
+F1-Score  : 0.9876
+
+Confussion Matrix
+
 
 // will be updated
-*Written and made by Ghozi (GITHUB : godtzi)
+*Written and made by Ahmad Ghozi (GITHUB : godtzi)
