@@ -1,4 +1,4 @@
-##AI MODEL to Detect Brain Tumor, trained using RepVit
+## AI MODEL to Detect Brain Tumor, trained using RepVit ##
 
 - AI model to detect brain tumors from brain MRI images. 
 - It trained using RepVit that already pretrained.
