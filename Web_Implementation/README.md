@@ -28,7 +28,7 @@ Buka browser ke: **http://localhost:5000**
 Tekan `Ctrl+C` di terminal.
 
 ## Troubleshooting
-- **`FileNotFoundError: repvit_brain_tumor_best.pt`** → file model belum ada di folder yang benar.
-- **`ModuleNotFoundError: No module named 'timm'`** dll → jalankan ulang `pip install -r requirements.txt` di virtual environment yang aktif.
+- **`FileNotFoundError: repvit_brain_tumor_best.pt`** → file model belum ada di folder yang benar atau Lokasi perlu diubah sesuai dengan lokasi dari model.
+- **`ModuleNotFoundError: No module named 'timm'`** dll → jalankan ulang `pip install -r requirements.txt`
 - **Port 5000 sudah dipakai** → ubah baris terakhir `app.py` jadi `app.run(host="0.0.0.0", port=5001, debug=True)` lalu akses `http://localhost:5001`.
 - **Loading pertama lambat** → normal, model PyTorch di-load sekali saat server start.
