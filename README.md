@@ -5,8 +5,9 @@
 
 **HOW TO USE, GO TO "WEB_IMPLEMENTATION"**
 
-# Model Training are Written by Ahmad Ghozi + Helped from a few AI models
-# Concept and other thing more spesific like the health and journal are helped by M Khair and Arefa P.
+Model Training are Written by Ahmad Ghozi + Helped from a few AI models
+
+Helped with spesific health and journal are helped by M Khair and Arefa P.
 
 - AI model to detect brain tumors from brain MRI images. 
 - It trained using RepVit that already pretrained.
