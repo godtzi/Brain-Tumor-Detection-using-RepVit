@@ -41,4 +41,4 @@ False Negatif (FN) = 9
 
 
 // will be updated
-*Written and made by Ahmad Ghozi (GITHUB : godtzi)
+*Written and made by Ahmad Ghozi (GITHUB : godtzi) (Special Thanks to M Khair dan Arefa Putri)
