@@ -3,7 +3,7 @@
 ![gif](https://res.cloudinary.com/vi9qfhdg/image/upload/v1787324098/gittsstseee0001-0088-ezgif.com-video-to-gif-converter_1.gif)
 
 
-**HOW TO USE, GO TO WEB_IMPLEMENTATION"**
+**HOW TO USE, GO TO "WEB_IMPLEMENTATION"**
 
 # Model Training are Written by Ahmad Ghozi + Helped from a few AI models
 # Concept and other thing more spesific like the health and journal are helped by M Khair and Arefa P.
