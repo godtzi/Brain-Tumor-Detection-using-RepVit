@@ -3,11 +3,11 @@
 #██   ███ ██    ██ ██   ██    ██      ███   ██ 
 #██    ██ ██    ██ ██   ██    ██     ███    ██ 
 # ██████   ██████  ██████     ██    ███████ ██ 
-                                                  
+# Made by Ahmad Ghozi and helped by M Khair and Arefa P.
 
+############ library ############
 import io
 import base64
-
 import numpy as np
 import torch
 import timm
@@ -16,20 +16,22 @@ from PIL import Image
 from torchvision import transforms
 from flask import Flask, request, render_template, jsonify
 
-
+############ Variable ############
 MODEL_NAME = "repvit_m1_1"
-MODEL_PATH = r"repvit_brain_tumor_best.pt"
+MODEL_PATH = r"repvit_brain_tumor_best.pt" #If error change to the spesific location, e.g. r"C:\Users\ghozi\Projects\Jupyter\Repvit_Tumor\WEBSITE\Web_Implementation\repvit_brain_tumor_best.pt"
 CLASS_NAMES = ["normal", "tumor"]
 IMG_SIZE = 224
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+############ Choosing the Computer ############
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu") # Either CPU or GPU (CUDA if NVIDIA)
 
-
+############ Loading The model ############
 model = timm.create_model(MODEL_NAME, pretrained=False, num_classes=2)
 model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
 model.to(device)
 model.eval()
 
+############ Changing the image ############
 transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
     transforms.ToTensor(),
@@ -38,7 +40,7 @@ transform = transforms.Compose([
 
 app = Flask(__name__)
 
-
+############ GradCam Visualization Func ############
 def gradcam_overlay(acts, grads, orig_img):
     """Build a simple Grad-CAM heatmap overlay from the last feature map."""
     weights = grads.mean(dim=(1, 2))                            # (C,)
@@ -107,6 +109,9 @@ def predict():
         "gradcam": gradcam_b64,
     })
 
-
+############ Main Loop ############
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+# Code are Written by Ahmad Ghozi + Helped from a few AI models
+# Concept and other thing more spesific like the health and journal are helped by M Khair and Arefa P.
