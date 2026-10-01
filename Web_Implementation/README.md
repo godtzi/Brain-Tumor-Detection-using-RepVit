@@ -5,36 +5,24 @@
 brain-tumor-app/
 ├── app.py
 ├── requirements.txt
-├── repvit_brain_tumor_best.pt   <- taruh file model kamu di sini
+├── repvit_brain_tumor_best.pt
 └── templates/
     └── index.html
 ```
 
-## 2. Buat virtual environment (opsional tapi disarankan)
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-```
-
-## 3. Install dependencies
+## 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 Catatan: `requirements.txt` menunjuk ke index PyTorch CPU. Kalau kamu punya GPU CUDA dan ingin pakai GPU, install torch versi CUDA secara terpisah dulu (lihat pytorch.org) sebelum `pip install -r requirements.txt`.
 
-## 4. Taruh file model
-Copy `repvit_brain_tumor_best.pt` ke folder `brain-tumor-app/` (sejajar dengan `app.py`). Nama file harus sama persis, atau ubah `MODEL_PATH` di `app.py`.
-
-## 5. Jalankan
+## 3. Jalankan
 ```bash
 python app.py
 ```
 Buka browser ke: **http://localhost:5000**
 
-## 6. Menghentikan server
+## 4. Menghentikan server
 Tekan `Ctrl+C` di terminal.
 
 ## Troubleshooting
