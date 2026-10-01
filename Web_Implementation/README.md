@@ -1,4 +1,5 @@
-In Indonesian Language
+In Indonesian Language  |  
+
 Will add English Language, for now use AI to translate
 
 # Brain Tumor Screening  Prototipe Lokal
