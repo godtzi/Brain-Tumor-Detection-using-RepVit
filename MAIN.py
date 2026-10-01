@@ -78,9 +78,31 @@ def mode_int8():
     return prediction
 
 
-print("Start")  
+start = f'''
+=======================================
+======== Detecting Brain Tumor ========
+=======================================
 
-print(mode_int8())
+Select Model Type:
+1 -> PyTorch (.pt)      (this is the original model)
+2 -> onnx FP32          (this is the 32 bit version of ONNX)
+3 -> onnx INT8          (this is the quantization of the model to INT8)
+
+Choose the model : 
+'''
+
+while True :
+
+    model = input("")
+
+    print(start)
+
+    if model == "1":
+        hasil = mode_pt()
+    elif model == "2":
+        hasil = mode_onnx()
+    elif model == "3":
+        hasil = mode_int8()
 
 
 
